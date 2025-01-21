@@ -13,11 +13,10 @@ Le site **Orient Espace** met en valeur l'ambiance et les services du restaurant
 
 ## Fonctionnalités
 
-- **Page d'accueil** : Présentation du restaurant et de son concept.  
-- **Menu** : Liste des plats et boissons avec descriptions et prix.  
-- **Galerie** : Photos des plats et de l'intérieur du restaurant.  
-- **Contact** : Formulaire pour réserver une table ou poser des questions.  
-- **Carte interactive** : Localisation du restaurant avec Google Maps.  
+- **Page d'accueil (`index.html`)** : Présentation du restaurant et de son concept.  
+- **Page Menu (`menu.html`)** : Liste des plats et boissons avec descriptions et prix.  
+- **Page Galerie (`galerie.html`)** : Photos des plats et de l'intérieur du restaurant.  
+- **Page Contact (`contact.html`)** : Formulaire pour réserver une table ou poser des questions.  
 
 ## Technologies utilisées
 
@@ -34,8 +33,11 @@ Aucune installation n'est nécessaire. Voici comment visualiser le projet :
 ## Structure des fichiers
 
 - `index.html` : Page principale du site.  
+- `menu.html` : Page dédiée au menu du restaurant.  
+- `galerie.html` : Galerie photo du restaurant.  
+- `contact.html` : Formulaire de contact et informations pratiques.  
 - `styles.css` : Fichier de styles.  
-- `script.js` : Fichier JavaScript pour les fonctionnalités interactives.  
+- `script.js` : Fichier JavaScript pour les fonctionnalités interactives (ex. : mode sombre).  
 
 ## Inspirations
 
