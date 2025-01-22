@@ -40,6 +40,21 @@ body {
     color: #007bff;
 }
 
+body.dark-mode .navbar {
+    background-color: #333 !important;
+    border-bottom: 1px solid #555 !important;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+    color: #fff !important;
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+    color: #ffcc00 !important;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

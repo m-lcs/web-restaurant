@@ -1,25 +1,21 @@
-// Sélection des éléments
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggleButton = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
-const body = document.body;
+const navbar = document.querySelector('.navbar');
 
-// Charger le thème actuel depuis le localStorage
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme === 'dark') {
-    body.classList.add('dark-mode');
+if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    navbar.classList.add('navbar-dark-mode');
     themeIcon.classList.replace('bi-moon', 'bi-sun');
 }
 
-// Alterner entre clair et sombre au clic
-themeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-
-    // Modifier l'icône
-    if (body.classList.contains('dark-mode')) {
+themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    navbar.classList.toggle('navbar-dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
         themeIcon.classList.replace('bi-moon', 'bi-sun');
-        localStorage.setItem('theme', 'dark'); // Sauvegarde le thème sombre
     } else {
+        localStorage.setItem('darkMode', 'disabled');
         themeIcon.classList.replace('bi-sun', 'bi-moon');
-        localStorage.setItem('theme', 'light'); // Sauvegarde le thème clair
     }
 });
