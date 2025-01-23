@@ -38,6 +38,8 @@ body {
 .nav-link:hover,
 .nav-link.active {
     color: #007bff;
+    transition: 0.6s;
+
 }
 
 body.dark-mode .navbar {
