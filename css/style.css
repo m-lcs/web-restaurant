@@ -136,3 +136,17 @@ img.img-fluid:hover {
     transform: scale(1.1); 
     cursor: pointer; 
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 576px) {
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
