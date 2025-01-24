@@ -125,3 +125,14 @@ form {
     flex: 1 1 50%;
     max-width: 50%;
 }
+
+img.img-fluid {
+    transition: transform 0.3s ease-in-out; 
+    display: block; 
+    margin: auto; 
+}
+
+img.img-fluid:hover {
+    transform: scale(1.1); 
+    cursor: pointer; 
+}
